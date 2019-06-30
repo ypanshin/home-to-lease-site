@@ -9,11 +9,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ site.title }} | {{ page.title }}</title>
+    <title>
+        {{ site.title }}
+        {% if page.title %}
+        | {{page.title}}
+        {% endif %}
+    </title>
     <!-- Primary Meta Tags -->
     <meta name="title" content="{{ site.title }}">
-    <meta name="description"
-        content="{{ site.description }}">
+    <meta name="description" content="{{ site.description }}">
     <meta name="keyword" content="rent, lease, property, condo, real estate, Millstone on the park">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,25 +25,37 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hometolease.ca/">
     <meta property="og:title" content="{{ site.title }}">
-    <meta property="og:description"
-        content="{{ site.description }}">
-    <meta property="og:image"
-        content="https://hometolease.ca/assets/img/social-meta-tags.jpg">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="https://hometolease.ca/assets/img/social-meta-tags.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://hometolease.ca/">
     <meta property="twitter:title" content="{{ site.title }}">
-    <meta property="twitter:description"
-        content="{{ site.description }}">
-    <meta property="twitter:image"
-        content="https://hometolease.ca/assets/img/social-meta-tags.jpg">
+    <meta property="twitter:description" content="{{ site.description }}">
+    <meta property="twitter:image" content="https://hometolease.ca/assets/img/social-meta-tags.jpg">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -271,7 +287,8 @@
 
 
 
-    <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
+        integrity="sha256-zyXsGPIj9MUc4RKKQuZEzcIkTYj4nRpRRA2dvlH07+g=" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-1.10.2.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-select.min.js"></script>
@@ -303,14 +320,14 @@
         });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1970564-14"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1970564-18"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'UA-1970564-14');
-    </script> -->
+        gtag('config', 'UA-1970564-18');
+    </script>
 
 </body>
 

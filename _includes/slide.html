@@ -10,10 +10,12 @@
         </div>
 
         <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-            {% for photo in page.photos %}
-            <li data-thumb="{{ photo }}">
-                <img src="{{ photo }}" />
+            {% for photo in site.static_files %}
+            {% if photo.path contains page.photos-path %}
+            <li data-thumb="{{ photo.path }}">
+                <img src="{{ photo.path }}" />
             </li>
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
