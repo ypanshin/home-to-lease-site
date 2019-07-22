@@ -126,15 +126,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse yamm" id="navigation">
                 <ul class="main-nav nav navbar-nav navbar-right">
-                    <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="/">Home</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="{% if page.url == '/' %}active{% endif %}" href="/">Home</a></li>
                     <!-- <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="application.html">Application</a></li> -->
-                    <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="contact.html">Contact</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.4s"><a  class="{% if page.url == '/contact.html' %}active{% endif %} href="contact.html">Contact</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
     <!-- End of nav bar -->
-
     {% include title.html %}
 
     {{ content }}
@@ -268,7 +267,7 @@
             <div class="container">
                 <div class="row">
                     <div class="pull-left">
-                        <span> (C) <a href="http://www.KimaroTec.com">KimaroTheme</a> , All rights reserved 2016 </span>
+                        <span> (C) <a target="_blank" href="http://www.KimaroTec.com">KimaroTheme</a> , All rights reserved 2016 </span>
                     </div>
                     <div class="bottom-menu pull-right">
                         <ul>
@@ -319,6 +318,7 @@
             });
         });
     </script>
+    {% if jekyll.environment == "production" %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1970564-18"></script>
     <script>
@@ -328,7 +328,7 @@
 
         gtag('config', 'UA-1970564-18');
     </script>
-
+    {% endif %}
 </body>
 
 </html>

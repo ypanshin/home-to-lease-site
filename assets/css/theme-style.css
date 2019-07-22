@@ -791,7 +791,8 @@ label small {
 
 .navbar-default .navbar-nav>li>a.active:after {
     background-color: #FDC600;
-    bottom: -24px;
+    /* bottom: -24px; */
+    bottom: -1px;
     content: "";
     height: 5px;
     left: 0;
@@ -853,7 +854,6 @@ label small {
 
 .navbar {
     margin-bottom: 0px;
-    min-height: 100px;
 }
 
 .navbar-default {
@@ -3439,7 +3439,19 @@ ul.footer-blog li {
     .single-property>.container>.padding-top-40 {
         padding-top: 0 !important;
     }
-    .single-property{
-        padding-top: 0 !important;;
+    .single-property {
+        padding-top: 0 !important;
+        ;
     }
+}
+
+.status {
+    text-align: center;
+    background-color: #FFA500;
+    color: #FFF;
+    padding: 0 31px;
+}
+
+.content-area {
+    padding-top: 0 !important;
 }
