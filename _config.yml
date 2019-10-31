@@ -2,7 +2,8 @@ title: "Beautiful condo at Millstone on the park for rent."
 description: "Stylish & highly thought one level Bungalow style Condo Unit. Backing view on to a green landscape, with large windows."
 email: "info@hometolease.ca"
 application-email: "application@hometolease.ca"
-phone: "(647)954-4508"
+# phone: "(647)954-4508"
+phone: "(***)***-****"
 excerpt_separator: <!--more-->
 plugins:
   - jekyll-assets
